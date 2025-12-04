@@ -1,0 +1,100 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f8ff;
+    margin: 0;
+    padding: 0;
+    color: #1d2d50;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a3d7c;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #c9d6ff;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #1a3d7c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    background: #153366;
+}
+
+.resultado {
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.sucesso {
+    border-left: 6px solid #2ecc71;
+}
+
+.erro {
+    border-left: 6px solid #e74c3c;
+}
+
+#res-content {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.botoes-acao {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.escondido {
+    display: none;
+}
+
+/* Impressão — imprime só o resultado */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #resultado, #resultado * {
+        visibility: visible;
+    }
+    #resultado {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+    }
+}

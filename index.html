@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Certificados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="titulo">Validador de Certificados</h1>
+
+        <div class="card">
+            <label for="codigo">Digite o código de validação:</label>
+            <input type="text" id="codigo" placeholder="Ex: CERT-0001-20251203">
+
+            <button id="btn-validar">Validar Certificado</button>
+        </div>
+
+        <div id="resultado" class="resultado escondido">
+            <div id="res-content"></div>
+
+            <div class="botoes-acao escondido" id="action-buttons">
+                <button id="btn-abrir">Abrir Certificado</button>
+                <button id="btn-imprimir">Imprimir</button>
+                <button id="btn-novo">Nova Consulta</button>
+            </div>
+        </div>
+
+    </div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
